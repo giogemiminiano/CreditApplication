@@ -1,6 +1,6 @@
 # CreditApplication
 
-##Consideraciones
+## Consideraciones
 <p>
 Versiones ocupadas para el proyecto:
 </p>
@@ -37,13 +37,17 @@ Adicionales :
 
 ## Instrucciones para probar (Opcion 2 - GitHub)
 1.Crear repositorio personal.
+
 2.Subir contenido al nuevo repositorio.
+
 3.Desde la raiz del repositorio.
   Code -> Create CodeSpace
 
 ## Instrucciones para probar (Opcion 3 - Railway)
 1.Crear cuenta railway : https://railway.com/.
+
 2.Crear proyecto.
+
 3.Crear base de datos para PostgreSQL.
 4.Crear base de datos para Redis.
 5.Respaldar variables de bases de datos para generar las siguientes variables para la app:
@@ -57,7 +61,7 @@ Adicionales :
 9.Usar coleccion postman para probar.
 
 
-###Flujo de interaccion
+## Flujo de interaccion
 
 ```mermaid
 flowchart TD
