@@ -32,10 +32,11 @@ Adicionales :
 1. Descargar o clonar el repositorio.
    
    `$ git clone {{repo}}`
-3. Levantar con el comando.
+2. Levantar con el comando.
    
   `$ docker-compose up`
-5. Utilizar la collecion postman compartida para probar.
+  
+3. Utilizar la collecion postman compartida para probar.
 
 ## Instrucciones para probar (Opcion 2 - GitHub)
 1.Crear repositorio personal.
@@ -103,3 +104,10 @@ D --> F
 B --> E
 E --> G
 ```
+
+## Oportunidades de mejora (Faltantes)
+1. Cubrir porcentaje faltante de pruebas unitarias.
+2. Paginacion pendiente en el listado de todas las solicitudes
+3. Continuar con la normalizacion de la base incluyendo las nuevas tablas
+4. RabbitMQ
+5. Despliegue Azure
