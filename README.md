@@ -34,14 +34,35 @@ Customer->CreditApplication: Genera solicitud de credito
 Note right of CreditApplication: Api valida la informacion 
 CreditApplication-->Customer: Solicitud creada 
 ```
+```mermaid
+flowchart TD
 
-```flow
-st=>start: Login
-op=>operation: Login operation
-cond=>condition: Successful Yes or No?
-e=>end: To admin
+subgraph INBOUND
+A[CreditController]
+end
 
-st->op->cond
-cond(yes)->e
-cond(no)->op
+subgraph APPLICATION
+B[CreateCreditService]
+end
+
+subgraph DOMAIN
+C[Credit]
+end
+
+subgraph OUTBOUND
+D[CreditRepositoryAdapter]
+E[FrankfurterClient]
+end
+
+subgraph INFRA
+F[(PostgreSQL)]
+G[Frankfurter API]
+end
+
+A --> B
+B --> C
+B --> D
+D --> F
+B --> E
+E --> G
 ```
