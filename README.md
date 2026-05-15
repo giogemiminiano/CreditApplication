@@ -28,33 +28,58 @@ Adicionales :
 - Redis
 - OpenApi
 
+## Instrucciones para probar
+1. Descargar o clonar el repositorio.
+   `$ git clone {{repo}}`
+2. Levantar con el comando. 
+  `$ docker-compose up`
+3. Utilizar la collecion postman compartida para probar.
+
+## Instrucciones para probar (Opcion 2 - GitHub)
+1.Crear repositorio personal
+2.Subir contenido al nuevo repositorio
+3.Desde la raiz del repositorio.
+  Code -> Create CodeSpace
+
+## Instrucciones para probar (Opcion 3 - Railway)
+1.Crear cuenta railway : https://railway.com/
+2.Crear proyecto
+3.Crear base de datos para PostgreSQL
+4.Crear base de datos para Redis
+5.Respaldar variables de bases de datos para generar las siguientes variables para la app:
+  - SPRING_DATASOURCE_URL
+  - SPRING_DATASOURCE_USERNAME
+  - SPRING_DATASOURCE_PASSWORD
+  - SPRING_REDIS_HOST
+6.Generar proceso por medio de respositorio.
+7.Incluir variables en el proceso de spring.
+8.Generar url desde el proceso de spring en setting
+9.Usar coleccion postman para probar
+
+
 ###Flujo de interaccion
-```seq
-Customer->CreditApplication: Genera solicitud de credito 
-Note right of CreditApplication: Api valida la informacion 
-CreditApplication-->Customer: Solicitud creada 
-```
+
 ```mermaid
 flowchart TD
 
 subgraph INBOUND
-A[CreditController]
+A[CreditApplicationController]
 end
 
 subgraph APPLICATION
-B[CreateCreditService]
+B[CreateCreditApplicationService]
 end
 
 subgraph DOMAIN
-C[Credit]
+C[CreditApplication]
 end
 
 subgraph OUTBOUND
-D[CreditRepositoryAdapter]
+D[CreditApplicationRepositoryAdapter]
 E[FrankfurterClient]
 end
 
-subgraph INFRA
+subgraph INFRASTRUCTURE
 F[(PostgreSQL)]
 G[Frankfurter API]
 end
