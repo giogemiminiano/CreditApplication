@@ -30,10 +30,12 @@ Adicionales :
 
 ## Instrucciones para probar
 1. Descargar o clonar el repositorio.
+   
    `$ git clone {{repo}}`
-2. Levantar con el comando. 
+3. Levantar con el comando.
+   
   `$ docker-compose up`
-3. Utilizar la collecion postman compartida para probar.
+5. Utilizar la collecion postman compartida para probar.
 
 ## Instrucciones para probar (Opcion 2 - GitHub)
 1.Crear repositorio personal.
@@ -49,15 +51,21 @@ Adicionales :
 2.Crear proyecto.
 
 3.Crear base de datos para PostgreSQL.
+
 4.Crear base de datos para Redis.
+
 5.Respaldar variables de bases de datos para generar las siguientes variables para la app:
   - SPRING_DATASOURCE_URL
   - SPRING_DATASOURCE_USERNAME
   - SPRING_DATASOURCE_PASSWORD
   - SPRING_REDIS_HOST
+    
 6.Generar proceso por medio de respositorio.
+
 7.Incluir variables en el proceso de spring.
+
 8.Generar url desde el proceso de spring en setting.
+
 9.Usar coleccion postman para probar.
 
 
