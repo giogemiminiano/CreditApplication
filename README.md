@@ -1,6 +1,6 @@
 # CreditApplication
 
-###Consideraciones
+##Consideraciones
 <p>
 Versiones ocupadas para el proyecto:
 </p>
@@ -36,16 +36,16 @@ Adicionales :
 3. Utilizar la collecion postman compartida para probar.
 
 ## Instrucciones para probar (Opcion 2 - GitHub)
-1.Crear repositorio personal
-2.Subir contenido al nuevo repositorio
+1.Crear repositorio personal.
+2.Subir contenido al nuevo repositorio.
 3.Desde la raiz del repositorio.
   Code -> Create CodeSpace
 
 ## Instrucciones para probar (Opcion 3 - Railway)
-1.Crear cuenta railway : https://railway.com/
-2.Crear proyecto
-3.Crear base de datos para PostgreSQL
-4.Crear base de datos para Redis
+1.Crear cuenta railway : https://railway.com/.
+2.Crear proyecto.
+3.Crear base de datos para PostgreSQL.
+4.Crear base de datos para Redis.
 5.Respaldar variables de bases de datos para generar las siguientes variables para la app:
   - SPRING_DATASOURCE_URL
   - SPRING_DATASOURCE_USERNAME
@@ -53,8 +53,8 @@ Adicionales :
   - SPRING_REDIS_HOST
 6.Generar proceso por medio de respositorio.
 7.Incluir variables en el proceso de spring.
-8.Generar url desde el proceso de spring en setting
-9.Usar coleccion postman para probar
+8.Generar url desde el proceso de spring en setting.
+9.Usar coleccion postman para probar.
 
 
 ###Flujo de interaccion
